@@ -228,7 +228,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/20/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王贤锐">
@@ -247,7 +247,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/16/hello-world/" itemprop="url">职业坑蒙拐骗,业余在读书</a></h1>
+                <a class="post-title-link" href="/2018/02/20/hello-world/" itemprop="url">职业坑蒙拐骗,业余在读书</a></h1>
         
 
         <div class="post-meta">
@@ -259,8 +259,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-16T10:18:53+08:00">
-                2018-02-16
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-20T13:23:02+08:00">
+                2018-02-20
               </time>
             
 
@@ -301,7 +301,7 @@
           
             <h2 id="Digital-Signal-Processing"><a href="#Digital-Signal-Processing" class="headerlink" title="Digital Signal Processing"></a>Digital Signal Processing</h2><h3 id="Fourier-TransForm-amp-Laplace-TransForm"><a href="#Fourier-TransForm-amp-Laplace-TransForm" class="headerlink" title="Fourier TransForm &amp; Laplace TransForm"></a>Fourier TransForm &amp; Laplace TransForm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Blog in CSDN</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://blog.csdn.net/chenych27/article/details/51784915/" target="_blank" rel="noopener">Click Here</a></p>
-<h2 id="Deep-Learning-With-pyTorch"><a href="#Deep-Learning-With-pyTorch" class="headerlink" title="Deep Learning With pyTorch"></a>Deep Learning With pyTorch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 利用pyTorch搭建一个神经网络</span><br></pre></td></tr></table></figure>
+<h2 id="Deep-Learning-With-pyTorch"><a href="#Deep-Learning-With-pyTorch" class="headerlink" title="Deep Learning With pyTorch"></a>Deep Learning With pyTorch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">利用pyTorch搭建一个神经网络做Regression</span><br></pre></td></tr></table></figure>
 <p>More Info: <a href="https://crzayray.github.io/2018/02/15/pyTorch%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" target="_blank" rel="noopener">Click Here</a></p>
 <h2 id="Pattern-Recognition"><a href="#Pattern-Recognition" class="headerlink" title="Pattern Recognition"></a>Pattern Recognition</h2><h3 id="Recognizer-based-on-bayes"><a href="#Recognizer-based-on-bayes" class="headerlink" title="Recognizer based on bayes"></a>Recognizer based on bayes</h3><h2 id="Literature"><a href="#Literature" class="headerlink" title="Literature"></a>Literature</h2><h2 id="Movies"><a href="#Movies" class="headerlink" title="Movies"></a>Movies</h2><h3 id="1-Brave-Heart-勇敢的心"><a href="#1-Brave-Heart-勇敢的心" class="headerlink" title="1.Brave Heart(勇敢的心)"></a>1.Brave Heart(勇敢的心)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Brave Heart</span><br></pre></td></tr></table></figure>
 <p>More Info: <a href="https://crzayray.github.io/2018/02/02/Brave-Heart/" target="_blank" rel="noopener">Click Here</a></p>
@@ -441,9 +441,6 @@
 </code></pre><h4 id="查看网络"><a href="#查看网络" class="headerlink" title="查看网络"></a>查看网络</h4><pre><code>print(net)
 </code></pre><h3 id="构造优化器，定义损失函数"><a href="#构造优化器，定义损失函数" class="headerlink" title="构造优化器，定义损失函数"></a>构造优化器，定义损失函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">optimizer=torch.optim.SGD(net.parameters(),lr=0.5);</span><br><span class="line">loss_Func=torch.nn.MSELoss();</span><br></pre></td></tr></table></figure>
 <h3 id="开始训练"><a href="#开始训练" class="headerlink" title="开始训练"></a>开始训练</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">plt.ion()</span><br><span class="line">plt.show()</span><br><span class="line">for i in range (1000):</span><br><span class="line">    prediction=net(x);</span><br><span class="line">    loss=loss_Func(prediction,y);</span><br><span class="line">    optimizer.zero_grad();</span><br><span class="line">    loss.backward();</span><br><span class="line">    optimizer.step();</span><br><span class="line">    if i%5==0:</span><br><span class="line">        plt.cla();</span><br><span class="line">        plt.scatter(x.data.numpy(),y.data.numpy());</span><br><span class="line">        plt.plot(x.data.numpy(),prediction.data.numpy(),&apos;r-&apos;,lw=5);</span><br><span class="line">        plt.text(0.5,0,&apos;Loss=%.4f&apos;% loss.data[0],fontdict=&#123;&apos;size&apos;:20,&apos;color&apos;:&apos;red&apos;&#125;);</span><br><span class="line">        plt.pause(0.1)</span><br><span class="line">plt.ioff();</span><br><span class="line">plt.show();</span><br></pre></td></tr></table></figure>
-<h2 id="看下我们的拟合效果"><a href="#看下我们的拟合效果" class="headerlink" title="看下我们的拟合效果"></a>看下我们的拟合效果</h2><h3 id="拟合初始化"><a href="#拟合初始化" class="headerlink" title="拟合初始化"></a>拟合初始化</h3><p><img src="http://pic.suiyiyun.cn/598137/initial.png" alt="初始化"></p>
-<h3 id="中间拟合效果"><a href="#中间拟合效果" class="headerlink" title="中间拟合效果"></a>中间拟合效果</h3><p><img src="http://pic.suiyiyun.cn/598137/middle.png" alt="中间效果"></p>
-<h3 id="拟合最终结果"><a href="#拟合最终结果" class="headerlink" title="拟合最终结果"></a>拟合最终结果</h3><p><img src="http://pic.suiyiyun.cn/598137/end.png" alt="拟合最终结果"></p>
 <h5 id="请关注我的博客，祝大家新年快乐，狗年早日脱单！"><a href="#请关注我的博客，祝大家新年快乐，狗年早日脱单！" class="headerlink" title="请关注我的博客，祝大家新年快乐，狗年早日脱单！"></a>请关注我的<a href="https://crzayray.github.io/" target="_blank" rel="noopener">博客</a>，祝大家新年快乐，狗年早日脱单！</h5>
           
         
